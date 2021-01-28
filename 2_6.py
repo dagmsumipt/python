@@ -10,5 +10,5 @@ for i, j, k, l in zip(goods, prices, cnt, items):
     d.append((a, d1))
     a += 1
 print(d)
-analytics = dict(zip(params, [goods, prices, cnt, items]))
+analytics = dict(zip(params, [set(goods), prices, cnt, set(items)]))
 print(analytics)
